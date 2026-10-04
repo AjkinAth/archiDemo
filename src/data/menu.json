@@ -1,0 +1,126 @@
+{
+  "name": "The Daily Grind",
+  "currency": "USD",
+  "categories": [
+    {
+      "id": "espresso",
+      "name": "Espresso Bar",
+      "items": [
+        {
+          "id": "espresso",
+          "name": "Espresso",
+          "description": "A rich, balanced shot of our house espresso.",
+          "price": 2.75
+        },
+        {
+          "id": "americano",
+          "name": "Americano",
+          "description": "Espresso softened with hot water.",
+          "price": 3.25,
+          "tags": ["vegan"]
+        },
+        {
+          "id": "cappuccino",
+          "name": "Cappuccino",
+          "description": "Espresso with steamed milk and a silky layer of foam.",
+          "price": 4.25,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "vanilla-latte",
+          "name": "Vanilla Latte",
+          "description": "Espresso and steamed milk with house vanilla syrup.",
+          "price": 4.75,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "mocha",
+          "name": "Mocha",
+          "description": "Espresso, chocolate, and steamed milk, finished with cocoa.",
+          "price": 5.0,
+          "tags": ["vegetarian"]
+        }
+      ]
+    },
+    {
+      "id": "coffee-and-tea",
+      "name": "Coffee & Tea",
+      "items": [
+        {
+          "id": "drip-coffee",
+          "name": "Drip Coffee",
+          "description": "Freshly brewed, rotating single-origin coffee.",
+          "price": 3.0,
+          "tags": ["vegan"]
+        },
+        {
+          "id": "cold-brew",
+          "name": "Cold Brew",
+          "description": "Smooth, slow-steeped coffee served over ice.",
+          "price": 4.0,
+          "tags": ["vegan"]
+        },
+        {
+          "id": "chai-latte",
+          "name": "Chai Latte",
+          "description": "Spiced black tea blended with steamed milk.",
+          "price": 4.5,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "matcha-latte",
+          "name": "Matcha Latte",
+          "description": "Ceremonial-style green tea whisked with steamed milk.",
+          "price": 4.75,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "herbal-tea",
+          "name": "Herbal Tea",
+          "description": "A calming caffeine-free blend, served hot.",
+          "price": 3.25,
+          "tags": ["vegan", "caffeine-free"]
+        }
+      ]
+    },
+    {
+      "id": "bakery",
+      "name": "Bakery",
+      "items": [
+        {
+          "id": "butter-croissant",
+          "name": "Butter Croissant",
+          "description": "Flaky, golden pastry baked fresh each morning.",
+          "price": 3.5,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "blueberry-muffin",
+          "name": "Blueberry Muffin",
+          "description": "A tender muffin packed with blueberries and topped with sugar.",
+          "price": 3.75,
+          "tags": ["vegetarian"]
+        },
+        {
+          "id": "banana-bread",
+          "name": "Banana Bread",
+          "description": "Moist banana loaf with toasted walnuts.",
+          "price": 3.5,
+          "tags": ["vegetarian", "contains-nuts"]
+        },
+        {
+          "id": "chocolate-chip-cookie",
+          "name": "Chocolate Chip Cookie",
+          "description": "A soft-centered cookie with dark chocolate chunks.",
+          "price": 2.75,
+          "tags": ["vegetarian"]
+        }
+      ]
+    }
+  ],
+  "customizations": {
+    "milkOptions": ["whole", "oat", "almond", "soy"],
+    "milkSubstitutionPrice": 0.75,
+    "extraEspressoShotPrice": 1.0
+  }
+}

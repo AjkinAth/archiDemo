@@ -1,0 +1,236 @@
+:host {
+  display: block;
+  color: #252920;
+  font-family: 'DM Sans', sans-serif;
+}
+
+section {
+  width: min(100% - 48px, 613px);
+  min-height: 530px;
+  margin: 0 auto;
+  padding: 72px 0 96px;
+}
+
+section > h2 {
+  margin: 0 0 26px;
+  color: #354c3a;
+  font: 500 clamp(36px, 5vw, 52px) 'Playfair Display', Georgia, serif;
+  letter-spacing: -1px;
+}
+
+section > ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e6e2d8;
+  list-style: none;
+}
+
+.cart-row {
+  min-height: 66px;
+  display: grid;
+  grid-template-columns: 62px 1fr 90px 72px;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #e6e2d8;
+  font-size: 14px;
+}
+
+.qty {
+  color: #717568;
+}
+
+.name {
+  color: #354c3a;
+  font-weight: 600;
+}
+
+.price {
+  font-weight: 600;
+  text-align: right;
+}
+
+.delete-button {
+  color: #9a6a52;
+  font-size: 11px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.delete-button:hover {
+  color: #c66c43;
+  text-decoration: underline;
+}
+
+.total-row {
+  padding-top: 17px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.total-row p {
+  margin: 0;
+}
+
+.price-total {
+  min-width: 90px;
+  text-align: right;
+}
+
+.order-form {
+  margin-top: 42px;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  display: grid;
+  gap: 1rem;
+  border: 1px solid #e6e2d8;
+  border-radius: 14px;
+  background: #fffefa;
+}
+
+.order-form,
+.order-form * {
+  box-sizing: border-box;
+}
+
+.form-heading h3 {
+  max-width: 480px;
+  margin: 0 0 10px;
+  color: #354c3a;
+  font: 500 28px 'Playfair Display', Georgia, serif;
+}
+
+.form-description {
+  max-width: 460px;
+  margin: 0;
+  color: #717568;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.form-heading .eyebrow {
+  margin: 0 0 8px;
+  color: #c66c43;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+  row-gap: 1rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.form-group label {
+  color: #354c3a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.form-group label span {
+  color: #8a8d82;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.form-group input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.65rem 1rem;
+  border: 1px solid #d9dbd1;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  color: #252920;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #536a56;
+  box-shadow: 0 0 0 3px rgba(83, 106, 86, 0.12);
+}
+
+.email-field {
+  grid-column: 1 / -1;
+}
+
+.submit-order {
+  justify-self: start;
+  min-height: 48px;
+  margin-top: 0;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  border-radius: 10px;
+  background: #354c3a;
+  color: #fffaf0;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.submit-order:hover,
+.submit-order:focus-visible {
+  background: #26392b;
+}
+
+.empty {
+  min-height: 300px;
+  margin: 0;
+  padding: 50px 0;
+  display: grid;
+  place-items: start center;
+  color: #717568;
+  font: 500 26px 'Playfair Display', Georgia, serif;
+}
+
+@media (max-width: 600px) {
+  section {
+    width: min(100% - 40px, 613px);
+    padding-block: 45px 70px;
+  }
+
+  .cart-row {
+    grid-template-columns: 36px 1fr 65px;
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .delete-button {
+    grid-column: 2 / -1;
+    justify-self: start;
+    margin-top: -13px;
+    padding-bottom: 10px;
+  }
+
+  .order-form {
+    margin-top: 38px;
+    padding-block: 1.5rem;
+    padding-inline: 1.125rem;
+    border-radius: 12px;
+  }
+
+  .form-fields {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .email-field {
+    grid-column: auto;
+  }
+}

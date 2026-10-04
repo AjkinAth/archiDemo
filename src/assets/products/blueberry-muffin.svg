@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#e5e1d6"/>
+  <circle cx="391" cy="83" r="48" fill="#c2bfd0"/>
+  <ellipse cx="249" cy="321" rx="126" ry="25" fill="#d1cbbc"/>
+  <path d="M155 218h190l-28 101c-4 15-16 24-32 24h-70c-16 0-28-9-32-24z" fill="#bd704f"/>
+  <path d="m165 232 24 101m13-110 13 118m24-121 2 121m27-121-8 121m33-111-20 101" stroke="#e69b70" stroke-width="8" opacity=".8"/>
+  <path d="M149 223c-10-40 6-84 39-108 18-14 37-19 59-18 23-1 42 4 60 18 33 24 49 68 39 108-29 17-64 25-99 25s-69-8-98-25z" fill="#c88b54" stroke="#9f6338" stroke-width="5"/>
+  <circle cx="192" cy="191" r="11" fill="#53628d"/><circle cx="235" cy="149" r="10" fill="#53628d"/><circle cx="276" cy="191" r="12" fill="#53628d"/><circle cx="314" cy="169" r="9" fill="#53628d"/>
+  <circle cx="217" cy="214" r="8" fill="#53628d"/><circle cx="294" cy="222" r="8" fill="#53628d"/>
+  <text x="34" y="365" fill="#665e68" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="3">BERRY-PACKED &amp; BAKED</text>
+</svg>

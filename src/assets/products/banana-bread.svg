@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#e9dfce"/>
+  <circle cx="392" cy="82" r="47" fill="#d4b06e"/>
+  <ellipse cx="249" cy="315" rx="163" ry="29" fill="#d3c4a9"/>
+  <path d="M117 282 225 120l179 151-102 40z" fill="#a96e43"/>
+  <path d="m132 273 96-138 151 134-82 28z" fill="#e6b66f"/>
+  <path d="m160 265 77-108 113 103-60 22z" fill="#f2d08e"/>
+  <path d="m225 120 12 37m-41 42 16 17m63-52 17 20m25 16 19 19" stroke="#8d5938" stroke-width="8" stroke-linecap="round"/>
+  <path d="m191 251 16-20 18 12-10 19zm86-53 16-16 16 17-13 17z" fill="#77533d"/>
+  <ellipse cx="259" cy="322" rx="171" ry="24" fill="#fff8eb"/>
+  <text x="34" y="365" fill="#78563b" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="3">TOASTED WALNUTS INSIDE</text>
+</svg>

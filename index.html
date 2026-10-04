@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <meta
+      name="description"
+      content="Coffee, tea, and fresh-baked favorites from The Daily Grind."
+    />
+    <title>The Daily Grind | Coffee & Bakery</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand navlink" href="/" aria-label="The Daily Grind home">
+        <span class="brand-mark" aria-hidden="true">dg.</span>
+        <span class="brand-name">the daily grind</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="navlink" href="/">Menu</a>
+        <a class="order-link navlink" href="/order">
+          Your order
+          <span id="badge" class="badge" hidden>0</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <p>Good coffee. Good company. Every day.</p>
+      <span>THE DAILY GRIND · EST. 2018</span>
+    </footer>
+
+    <template id="menu-page-template">
+      <div class="menu-page">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">YOUR NEIGHBORHOOD COFFEE STOP</p>
+            <h1>A little pause.<br />A lot of good.</h1>
+            <p class="hero-description">
+              Thoughtfully made coffee, warm-from-the-oven treats, and a place
+              to make the everyday feel special.
+            </p>
+            <a class="hero-link" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-art" role="img" aria-label="Coffee and a freshly baked pastry">
+            <span class="art-sun"></span>
+            <span class="art-cup"><span class="art-steam"></span><span class="art-coffee"></span></span>
+            <span class="art-plate"></span>
+            <span class="art-bean art-bean-one"></span>
+            <span class="art-bean art-bean-two"></span>
+            <span class="art-caption">SLOW MORNINGS<br />START HERE</span>
+          </div>
+        </section>
+
+        <section class="menu-content" id="menu-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">MADE WITH CARE, SERVED WITH A SMILE</p>
+              <h2>Find your favorite</h2>
+            </div>
+            <p>Simple ingredients. A little extra love.</p>
+          </div>
+          <ul id="menu" class="menu-list" aria-live="polite"></ul>
+        </section>
+      </div>
+    </template>
+
+    <template id="product-item-template">
+      <article class="product-card">
+        <a class="product-link" href="#">
+          <div class="product-image-wrap">
+            <img alt="" loading="lazy" />
+            <span class="product-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="product-copy">
+            <h4></h4>
+            <p class="description"></p>
+            <p class="price"></p>
+          </div>
+        </a>
+        <button class="add-to-cart" type="button" aria-label="Add to order">
+          Add to order <span aria-hidden="true">+</span>
+        </button>
+      </article>
+    </template>
+
+    <template id="details-page-template">
+      <section class="details-layout">
+        <div class="details-image-wrap">
+          <img alt="" />
+          <span class="details-image-note">MADE FRESH, JUST FOR YOU</span>
+        </div>
+        <div class="details-copy">
+          <p class="eyebrow">A DAILY GRIND FAVORITE</p>
+          <h2></h2>
+          <p class="description"></p>
+          <p class="price"></p>
+          <button class="details-add" type="button">Add to your order <span aria-hidden="true">→</span></button>
+          <a class="back-to-menu navlink" href="/">← Back to the menu</a>
+        </div>
+      </section>
+    </template>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

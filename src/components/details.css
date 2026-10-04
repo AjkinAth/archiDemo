@@ -1,0 +1,125 @@
+:host {
+  display: block;
+  color: #252920;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.details-layout {
+  max-width: 1200px;
+  min-height: 640px;
+  margin: 0 auto;
+  padding: 76px clamp(24px, 7vw, 100px);
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: clamp(40px, 8vw, 110px);
+}
+
+.details-image-wrap {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  border-radius: 48% 48% 5px 5px;
+  background: #e7d6bd;
+}
+
+.details-image-wrap img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  display: block;
+  object-fit: cover;
+}
+
+.details-image-note {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 10px 13px;
+  background: #fffaf0;
+  color: #354c3a;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.details-copy .eyebrow {
+  margin-bottom: 13px;
+  color: #c66c43;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.details-copy h2 {
+  margin: 0 0 17px;
+  color: #354c3a;
+  font: 500 clamp(38px, 5vw, 58px) 'Playfair Display', Georgia, serif;
+  letter-spacing: -1.5px;
+  line-height: 1.08;
+}
+
+.details-copy .description {
+  margin: 0 0 20px;
+  color: #717568;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.details-copy .price {
+  margin: 0 0 26px;
+  color: #252920;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.details-add {
+  width: 100%;
+  min-height: 54px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  border-radius: 3px;
+  background: #354c3a;
+  color: #fffaf0;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.details-add:hover,
+.details-add:focus-visible {
+  background: #26392b;
+}
+
+.details-add span {
+  font-size: 19px;
+}
+
+.back-to-menu {
+  margin-top: 22px;
+  display: inline-block;
+  color: #717568;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.back-to-menu:hover {
+  color: #354c3a;
+}
+
+@media (max-width: 700px) {
+  .details-layout {
+    padding-block: 42px 64px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .details-image-wrap,
+  .details-image-wrap img {
+    min-height: 310px;
+    max-height: 380px;
+  }
+}

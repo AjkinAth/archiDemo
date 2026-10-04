@@ -1,0 +1,129 @@
+product-item {
+  display: block;
+  min-width: 0;
+  cursor: grab;
+}
+
+product-item:active {
+  cursor: grabbing;
+}
+
+product-item[dragging] {
+  opacity: 0.55;
+}
+
+.product-card {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e2d8;
+  border-radius: 5px;
+  background: #fffefa;
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 28px rgba(45, 51, 39, 0.08);
+  transform: translateY(-3px);
+}
+
+.product-link {
+  flex: 1;
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-image-wrap {
+  position: relative;
+  height: 172px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #e9e3d7;
+}
+
+.product-image-wrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 250ms ease;
+}
+
+.product-card:hover .product-image-wrap img {
+  transform: scale(1.04);
+}
+
+.product-arrow {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fffefa;
+  color: #354c3a;
+  font-size: 14px;
+}
+
+.product-copy {
+  padding: 16px 7px 10px;
+}
+
+.product-copy h4 {
+  margin: 0 0 6px;
+  color: #354c3a;
+  font: 600 18px 'Playfair Display', Georgia, serif;
+}
+
+.product-copy .description {
+  min-height: 38px;
+  margin: 0 0 12px;
+  color: #717568;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.product-copy .price {
+  margin: 0;
+  color: #252920;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.add-to-cart {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d8ddd4;
+  border-radius: 3px;
+  background: transparent;
+  color: #354c3a;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.add-to-cart span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.add-to-cart:hover,
+.add-to-cart:focus-visible {
+  border-color: #354c3a;
+  background: #354c3a;
+  color: #fffefa;
+}
+
+@media (max-width: 600px) {
+  .product-image-wrap {
+    height: 205px;
+  }
+}

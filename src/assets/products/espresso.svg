@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#ead7bd"/>
+  <circle cx="390" cy="82" r="48" fill="#d89b65"/>
+  <ellipse cx="255" cy="314" rx="166" ry="28" fill="#d2b99a"/>
+  <path d="M132 143h207l-19 139c-3 23-22 40-45 40h-79c-23 0-42-17-45-40z" fill="#fff9ec"/>
+  <ellipse cx="235" cy="145" rx="103" ry="26" fill="#fff9ec"/>
+  <ellipse cx="235" cy="149" rx="86" ry="17" fill="#4b2c1c"/>
+  <path d="M338 177h32c37 0 44 66 0 75h-40" fill="none" stroke="#fff9ec" stroke-width="19"/>
+  <path d="M189 119c-25-30 20-35-1-67m68 70c-19-23 18-30 4-57" fill="none" stroke="#fff9ec" stroke-linecap="round" stroke-width="6"/>
+  <text x="34" y="365" fill="#785638" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="3">A SHORT, BOLD SHOT</text>
+</svg>
